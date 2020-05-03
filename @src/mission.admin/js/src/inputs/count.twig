@@ -1,0 +1,3 @@
+{% for option in options.options %}
+	<div><label><input type="range" data-id="{{ option.id }}" (input-element) value="0" min="0" max="{{ option.max }}"><span data-id="{{ option.id }}" (counter)></span> {{ option.label }}</label></div>
+{% endfor %}
